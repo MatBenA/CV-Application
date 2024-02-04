@@ -1,15 +1,26 @@
-import InfoGeneral from "../components/InfoGeneral.jsx";
-import EducationInfo from "../components/EducationExp.jsx";
-import ProfesionalInfo from "../components/ProfesionalInfo.jsx";
+import { requiredInputs } from "./Data.js";
 import FormInput from "../components/FormInput.jsx";
 
 function App() {
     return (
         <>
-            <InfoGeneral />
-            <EducationInfo />
-            <ProfesionalInfo />
-            <FormInput name="Domicilio" label="Domicilio:" type="color" />
+            {requiredInputs.map((section, index) => {
+                return (
+                    <section key={index}>
+                        {section.map((input) => {
+                            return (
+                                <div key={input.id}>
+                                    <FormInput
+                                        name={input.name}
+                                        label={input.label}
+                                        type={input.type}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </section>
+                );
+            })}
         </>
     );
 }
