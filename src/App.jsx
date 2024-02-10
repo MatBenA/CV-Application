@@ -1,30 +1,13 @@
-import { requiredInputs } from "./Data.js";
-import FormInput from "../components/FormInput.jsx";
+import FormInput from "../components/FormInput";
+import CVVisualizer from "../components/CVVisualizer";
 
+// this component should split the screen in two parts, left for the form and right for the CV
 function App() {
     return (
-        <>
-            <form>
-                {requiredInputs.map((section, index) => {
-                    return (
-                        <section key={index}>
-                            {section.map((input) => {
-                                return (
-                                    <div key={input.id}>
-                                        <FormInput
-                                            name={input.name}
-                                            label={input.label}
-                                            type={input.type}
-                                        />
-                                    </div>
-                                );
-                            })}
-                        </section>
-                    );
-                })}
-                <button type="submit">Submit!</button>
-            </form>
-        </>
+        <div>
+            <FormInput />
+            <CVVisualizer />
+        </div>
     );
 }
 

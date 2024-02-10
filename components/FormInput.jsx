@@ -1,8 +1,14 @@
-export default function FormInput({name, label, type}){
-    return(
-        <>
-            <label htmlFor={name}>{label}</label>
-            <input type={type} name={name} />
-        </>
-    )
+import GenerallInformation from "./InputSections/GeneralInformation";
+import EducationalInformation from "./InputSections/EducationalInformation";
+import JobExperiencie from "./InputSections/JobExperiencie";
+
+
+export default function FormInput() {
+    return (
+        <form action="">
+            <GenerallInformation />
+            <EducationalInformation />
+            <JobExperiencie />
+        </form>
+    );
 }
