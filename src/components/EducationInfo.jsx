@@ -1,3 +1,4 @@
+/*A section to add your educational experience (school name, title of study and date of study)*/
 export default function EducationInfo({
     school,
     title,

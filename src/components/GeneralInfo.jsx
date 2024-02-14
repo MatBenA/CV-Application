@@ -1,3 +1,4 @@
+/*A section to add general information like name, email and phone number.*/
 export default function GeneralInfo({ name, email, phone, onChange }) {
     return (
         <fieldset>
