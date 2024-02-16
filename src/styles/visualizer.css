@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+
+.right {
+    width: 210mm;
+    height: 297mm;
+    border: solid;
+    margin: 0 auto;
+}

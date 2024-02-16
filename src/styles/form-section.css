@@ -6,3 +6,18 @@ fieldset {
 li {
     list-style: none;
 }
+
+input {
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px;
+    height: 1.5rem;
+}
+
+input:focus {
+    box-shadow: 0px 0px 3px lightblue;
+}
+
+input:hover {
+    background-color: rgb(68, 68, 68);
+}

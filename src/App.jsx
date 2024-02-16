@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import "./styles/visualizer.css";
 import { useState } from "react";
 import GeneralInfo from "./components/GeneralInfo";
 import EducationInfo from "./components/EducationInfo";
@@ -55,7 +56,7 @@ function App() {
                 <JobExp {...jobExperience} onChange={handleJobExp} />
             </form>
             <section className="right">
-                <div>
+                <div className="general">
                     <h1>{generalInfo.name}</h1>
                     <ul>
                         <li>

@@ -10,5 +10,5 @@
 }
 
 .left {
-    width: 40vw;
+    width: clamp(25rem, 40vw, 30rem);
 }
