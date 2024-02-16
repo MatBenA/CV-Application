@@ -7,4 +7,10 @@ h1 {
     height: 297mm;
     border: solid;
     margin: 0 auto;
+    padding: 1rem;
+}
+
+.general ul {
+    display: flex;
+    justify-content: space-around;
 }
