@@ -65,9 +65,6 @@ function App() {
                         <li>
                             <h4>{generalInfo.phone}</h4>
                         </li>
-                        <li>
-                            <h4>Misiones, Argentina</h4>
-                        </li>
                     </ul>
                 </div>
                 <div>
