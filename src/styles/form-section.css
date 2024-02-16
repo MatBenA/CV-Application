@@ -1,0 +1,8 @@
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}

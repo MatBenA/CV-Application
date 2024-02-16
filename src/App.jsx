@@ -1,3 +1,4 @@
+import "./styles/App.css";
 import { useState } from "react";
 import GeneralInfo from "./components/GeneralInfo";
 import EducationInfo from "./components/EducationInfo";
@@ -42,8 +43,8 @@ function App() {
     };
 
     return (
-        <div style={{ display: "flex" }}>
-            <form>
+        <div className="main">
+            <form className="left">
                 <GeneralInfo {...generalInfo} onChange={handleChange} />
 
                 <EducationInfo
@@ -53,7 +54,7 @@ function App() {
 
                 <JobExp {...jobExperience} onChange={handleJobExp} />
             </form>
-            <section>
+            <section className="right">
                 <div>
                     <h1>{generalInfo.name}</h1>
                     <ul>
